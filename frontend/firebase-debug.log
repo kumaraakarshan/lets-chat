@@ -1,0 +1,181 @@
+[debug] [2023-08-29T07:48:47.741Z] ----------------------------------------------------------------------
+[debug] [2023-08-29T07:48:47.743Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aakar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-29T07:48:47.743Z] CLI Version:   12.5.2
+[debug] [2023-08-29T07:48:47.743Z] Platform:      win32
+[debug] [2023-08-29T07:48:47.744Z] Node Version:  v18.16.1
+[debug] [2023-08-29T07:48:47.744Z] Time:          Tue Aug 29 2023 13:18:47 GMT+0530 (India Standard Time)
+[debug] [2023-08-29T07:48:47.745Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-29T07:48:47.753Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-29T07:48:47.753Z] > authorizing via signed-in user (aakarshan0005@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\aakar\OneDrive\Desktop\sharpener\garbage\New folder\lets-chat-main\frontend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-29T07:50:13.881Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-08-29T07:50:15.690Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-08-29T07:50:15.691Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project chat-app-a6eb4 (chat app) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-08-29T07:50:24.434Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-08-29T07:50:24.434Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/chat-app-a6eb4
+[debug] [2023-08-29T07:50:26.512Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firebasedatabase.googleapis.com 200
+[debug] [2023-08-29T07:50:26.512Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-08-29T07:50:26.513Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-08-29T07:50:26.513Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/chat-app-a6eb4
+[debug] [2023-08-29T07:50:28.664Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-08-29T07:50:28.664Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-08-29T07:50:38.677Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-08-29T07:50:38.677Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/chat-app-a6eb4
+[debug] [2023-08-29T07:50:40.539Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firebasedatabase.googleapis.com 200
+[debug] [2023-08-29T07:50:40.539Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-08-29T07:50:40.543Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-a6eb4 [none]
+[debug] [2023-08-29T07:50:40.947Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-a6eb4 200
+[debug] [2023-08-29T07:50:40.947Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-a6eb4 {"projectId":"chat-app-a6eb4","projectNumber":"381963802097","displayName":"chat app","name":"projects/chat-app-a6eb4","resources":{"hostingSite":"chat-app-a6eb4"},"state":"ACTIVE","etag":"1_6d892835-24b7-4c9e-a90d-4f499e6d5b50"}
+[debug] [2023-08-29T07:50:54.624Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/chat-app-a6eb4/locations/asia-southeast1/instances databaseId=chat-app-a6eb4-default-rtdb&validateOnly=true
+[debug] [2023-08-29T07:50:54.624Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/chat-app-a6eb4/locations/asia-southeast1/instances {"type":"default_database"}
+[debug] [2023-08-29T07:50:56.688Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/chat-app-a6eb4/locations/asia-southeast1/instances 200
+[debug] [2023-08-29T07:50:56.688Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/chat-app-a6eb4/locations/asia-southeast1/instances {"name":"projects/381963802097/locations/asia-southeast1/instances/chat-app-a6eb4-default-rtdb","project":"projects/381963802097","databaseUrl":"https://chat-app-a6eb4-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2023-08-29T07:50:56.689Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/chat-app-a6eb4/locations/asia-southeast1/instances databaseId=chat-app-a6eb4-default-rtdb
+[debug] [2023-08-29T07:50:56.689Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/chat-app-a6eb4/locations/asia-southeast1/instances {"type":"default_database"}
+[debug] [2023-08-29T07:50:58.970Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/chat-app-a6eb4/locations/asia-southeast1/instances 200
+[debug] [2023-08-29T07:50:58.971Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/chat-app-a6eb4/locations/asia-southeast1/instances {"name":"projects/381963802097/locations/asia-southeast1/instances/chat-app-a6eb4-default-rtdb","project":"projects/381963802097","databaseUrl":"https://chat-app-a6eb4-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-08-29T07:51:09.582Z] >>> [apiv2][query] GET https://chat-app-a6eb4-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-08-29T07:51:11.252Z] <<< [apiv2][status] GET https://chat-app-a6eb4-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-08-29T07:51:11.252Z] <<< [apiv2][body] GET https://chat-app-a6eb4-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for chat-app-a6eb4-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-08-29T07:51:11.256Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firestore.googleapis.com [none]
+[debug] [2023-08-29T07:51:11.256Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firestore.googleapis.com x-goog-quota-user=projects/chat-app-a6eb4
+[debug] [2023-08-29T07:51:13.210Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firestore.googleapis.com 200
+[debug] [2023-08-29T07:51:13.210Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/firestore.googleapis.com [omitted]
+[debug] [2023-08-29T07:51:13.211Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/chat-app-a6eb4/databases/(default) [none]
+[debug] [2023-08-29T07:51:15.132Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/chat-app-a6eb4/databases/(default) 200
+[debug] [2023-08-29T07:51:15.132Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/chat-app-a6eb4/databases/(default) {"name":"projects/chat-app-a6eb4/databases/(default)","uid":"626bc8c4-18c8-4dd5-a253-7c85019c8524","createTime":"2023-08-29T07:38:16.948291Z","updateTime":"2023-08-29T07:38:16.948291Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-08-29T07:38:16.948291Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"II27x5uxgYEDMMPEpaeugYED"}
+[debug] [2023-08-29T07:51:15.133Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-08-29T07:51:15.133Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-29T07:51:15.133Z] > authorizing via signed-in user (aakarshan0005@gmail.com)
+[debug] [2023-08-29T07:51:15.133Z] [iam] checking project chat-app-a6eb4 for permissions ["firebase.projects.get"]
+[debug] [2023-08-29T07:51:15.134Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-a6eb4:testIamPermissions [none]
+[debug] [2023-08-29T07:51:15.134Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-a6eb4:testIamPermissions x-goog-quota-user=projects/chat-app-a6eb4
+[debug] [2023-08-29T07:51:15.134Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-a6eb4:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-29T07:51:16.751Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-a6eb4:testIamPermissions 200
+[debug] [2023-08-29T07:51:16.751Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-a6eb4:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-08-29T07:51:16.758Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/chat-app-a6eb4/releases pageSize=10&pageToken=
+[debug] [2023-08-29T07:51:18.361Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/chat-app-a6eb4/releases 200
+[debug] [2023-08-29T07:51:18.362Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/chat-app-a6eb4/releases {"releases":[{"name":"projects/chat-app-a6eb4/releases/cloud.firestore","rulesetName":"projects/chat-app-a6eb4/rulesets/3fa8f9f5-6a95-4cca-99c6-2ad2047cde82","createTime":"2023-08-29T07:38:23.921857Z","updateTime":"2023-08-29T07:38:23.921857Z"}]}
+[debug] [2023-08-29T07:51:18.362Z] Found ruleset: projects/chat-app-a6eb4/rulesets/3fa8f9f5-6a95-4cca-99c6-2ad2047cde82
+[debug] [2023-08-29T07:51:18.362Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/chat-app-a6eb4/rulesets/3fa8f9f5-6a95-4cca-99c6-2ad2047cde82 [none]
+[debug] [2023-08-29T07:51:18.762Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/chat-app-a6eb4/rulesets/3fa8f9f5-6a95-4cca-99c6-2ad2047cde82 200
+[debug] [2023-08-29T07:51:18.762Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/chat-app-a6eb4/rulesets/3fa8f9f5-6a95-4cca-99c6-2ad2047cde82 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-08-29T07:51:37.253Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/chat-app-a6eb4/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-08-29T07:51:37.255Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/chat-app-a6eb4/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-08-29T07:51:39.080Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/chat-app-a6eb4/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-08-29T07:51:39.080Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/chat-app-a6eb4/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-08-29T07:51:39.583Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/chat-app-a6eb4/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-08-29T07:51:39.583Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/chat-app-a6eb4/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/chat-app-a6eb4/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-08-29T07:51:39.585Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-29T07:51:39.585Z] > authorizing via signed-in user (aakarshan0005@gmail.com)
+[debug] [2023-08-29T07:51:39.585Z] [iam] checking project chat-app-a6eb4 for permissions ["firebase.projects.get"]
+[debug] [2023-08-29T07:51:39.586Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-a6eb4:testIamPermissions [none]
+[debug] [2023-08-29T07:51:39.586Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-a6eb4:testIamPermissions x-goog-quota-user=projects/chat-app-a6eb4
+[debug] [2023-08-29T07:51:39.586Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-a6eb4:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-29T07:51:41.039Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-a6eb4:testIamPermissions 200
+[debug] [2023-08-29T07:51:41.039Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-a6eb4:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-29T07:51:41.039Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-08-29T07:51:41.039Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/chat-app-a6eb4
+[debug] [2023-08-29T07:51:41.041Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-08-29T07:51:41.041Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/chat-app-a6eb4
+[debug] [2023-08-29T07:51:42.960Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/cloudfunctions.googleapis.com 200
+[debug] [2023-08-29T07:51:42.960Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-08-29T07:51:42.960Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-08-29T07:51:42.961Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/chat-app-a6eb4
+[debug] [2023-08-29T07:51:42.971Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/runtimeconfig.googleapis.com 200
+[debug] [2023-08-29T07:51:42.971Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-08-29T07:51:45.115Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-08-29T07:51:45.115Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-08-29T07:51:55.127Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-08-29T07:51:55.127Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/chat-app-a6eb4
+[debug] [2023-08-29T07:51:57.041Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/cloudfunctions.googleapis.com 200
+[debug] [2023-08-29T07:51:57.041Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chat-app-a6eb4/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-08-29T07:54:15.140Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-08-29T07:54:15.232Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-08-29T07:54:15.232Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.3.0","browserURL":"https://www.gstatic.com/firebasejs/10.3.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.3.0/firebase.tgz"},"live":{"version":"10.3","browserURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.3.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.3.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.3.0/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.3.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.3.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.3.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.3.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.3.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.3.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.3.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.3.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\aakar\OneDrive\Desktop\sharpener\garbage\New folder\lets-chat-main\frontend is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=673781907&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-08-29T07:54:34.798Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-08-29T07:54:34.798Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-08-29T07:54:35.210Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-08-29T07:54:35.210Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-08-29T07:54:35.215Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-08-29T07:54:35.680Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-08-29T07:54:35.680Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"kumaraakarshan","id":81287263,"node_id":"MDQ6VXNlcjgxMjg3MjYz","avatar_url":"https://avatars.githubusercontent.com/u/81287263?v=4","gravatar_id":"","url":"https://api.github.com/users/kumaraakarshan","html_url":"https://github.com/kumaraakarshan","followers_url":"https://api.github.com/users/kumaraakarshan/followers","following_url":"https://api.github.com/users/kumaraakarshan/following{/other_user}","gists_url":"https://api.github.com/users/kumaraakarshan/gists{/gist_id}","starred_url":"https://api.github.com/users/kumaraakarshan/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/kumaraakarshan/subscriptions","organizations_url":"https://api.github.com/users/kumaraakarshan/orgs","repos_url":"https://api.github.com/users/kumaraakarshan/repos","events_url":"https://api.github.com/users/kumaraakarshan/events{/privacy}","received_events_url":"https://api.github.com/users/kumaraakarshan/received_events","type":"User","site_admin":false,"name":"kumar aakarshan","company":null,"blog":"","location":null,"email":null,"hireable":true,"bio":null,"twitter_username":null,"public_repos":27,"public_gists":0,"followers":0,"following":1,"created_at":"2021-03-24T07:05:19Z","updated_at":"2023-08-25T16:42:12Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":92169,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as kumaraakarshan 
+[info] 
